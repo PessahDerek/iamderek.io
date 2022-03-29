@@ -46,6 +46,9 @@
         transform: scale(1);
     }
     /** styling portfolio responsiveness*/
+    .portfolio a {
+        margin: 0;
+    }
     .list {
         height: auto;
         width: 95%;

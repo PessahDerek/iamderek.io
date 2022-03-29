@@ -28,6 +28,7 @@ html, body {
   background-position: center;
   background-position: fill;
   background-repeat: no-repeat;
+  overflow-x: hidden;
 }
 /** style all pages with id=page*/
 #page {
@@ -162,6 +163,15 @@ button:hover {
 }
 
 /** styling portfolio page*/
+.portfolio a{
+  width: 10vmax;
+  height: 2em;
+  text-decoration: none;
+  border-radius: 15px;
+  text-align: center;
+  line-height: 2em;
+  background-color: #0D1117;
+}
 .list {
   width: 90%;
   min-height: 45vmin;

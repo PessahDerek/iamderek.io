@@ -60,6 +60,7 @@
 .form {
     display: flexbox;
     width: 100vmin;
+    height: fit-content;
     text-align: center;
     margin-left: 50vmin;
     margin-top: 5%;
@@ -101,7 +102,7 @@
     text-decoration: none;
     text-align: center;
     height: 3em;
-    width: 40vh;
+    width: 40vmax;
     line-height: 3em;
 }
 #fiverr {

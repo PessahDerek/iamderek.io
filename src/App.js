@@ -99,7 +99,7 @@ function App() {
           and stunning user interfaces. I would like😃, actually love♥
           to work with you on your next project.
           </article>
-          <button onClick={()=>scrollTo(".hireMe")} className='hireMe'>hire me</button>
+          <button onClick={()=>scrollTo(".hireMe")} >hire me</button>
         </div>
 
         <div className='orangeCirc' />
@@ -111,6 +111,7 @@ function App() {
       <div data-aos="zoom-in" id='page' className='portfolio'>
         <nav>
           <h2>portfolio</h2>
+          <a href='https://github.com/PessahDerek'>github</a>
         </nav>
         <div className="list" id='websites'>
           <div className='nav'>Websites</div>
