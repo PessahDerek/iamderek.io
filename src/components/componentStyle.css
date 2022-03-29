@@ -1,0 +1,169 @@
+.project {
+    width: 60vh;
+    height: 10em;
+    position: relative;
+    text-align: center;
+    margin: 2.5%;
+    transition: transform 1s;
+}
+.project p {
+    font-size: 1.2em;
+}
+.projectImg {
+    width: 100%;
+    height: 8em;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+.projectImg img {
+    width: 90%;
+}
+.projectImg div {
+    position: absolute;
+    background-color: #FD4658;
+    width: 90%;
+    height: fit-content;
+    line-height: 5vh;
+    top: 0;
+    margin-top: 15%;
+    opacity: 0;
+    transition: opacity 0.5s, width 0.5s, background-image 5s;
+}
+.project:hover{
+    transform: scale(1.2);
+}
+
+.myService {
+    width: 40vh;
+    border-radius: 15px;
+    margin: 1%;
+    position: relative;
+    display: flex;
+    height: max-content;
+    background-color: #280034;
+    transition: transform 0.5s;
+}
+.myService:hover {
+    transform: scale(1.2);
+}
+.myService div {
+    width: 90%;
+    margin: 5%;
+    height: max-content;
+}
+.myService h4 {
+    color: #FD4658;
+}
+
+.form {
+    display: flexbox;
+    width: 100vmin;
+    text-align: center;
+    margin-left: 50vmin;
+    margin-top: 5%;
+    background-color: #280034;
+}
+.form input {
+    height: 3em;
+    width: 98vmin;
+    margin: 1vmin;
+    outline: none;
+    color: black;
+    text-align: center;
+    color: white;
+    background-color: white;
+    font-size: 0.8em;
+}
+.form textarea {
+    width: 98vmin;
+    margin: 1vmin;
+    height: 9em;
+    font-size: 0.9em;
+    outline: none;
+    font-family: arial;
+    color: black;
+}
+.form button {
+    width: 40vmin;
+    height: 3em;
+    background-color: black;
+}
+.hirePlatforms {
+    width: 100vmin;
+    margin-top: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.hirePlatforms a {
+    text-decoration: none;
+    text-align: center;
+    height: 3em;
+    width: 40vh;
+    line-height: 3em;
+}
+#fiverr {
+    background-color: #1DBF73;
+    color: white;
+    margin-bottom: 2%;
+}
+#upwork {
+    background-color: white;
+    color: #1DBF73;
+}
+
+@media screen and (max-width: 640px){
+    .form {
+        margin: 0;
+    }
+    .form input {
+        height: 3em;
+        width: 98vmin;
+        margin: 1vmin;
+        outline: none;
+        color: black;
+        text-align: center;
+        line-height: 7em;
+        font-size: 0.8em;
+    }
+    .hirePlatforms a {
+        margin: 0;
+    }
+    .project {
+        height: 10em;
+    }
+    .project:hover, .myService:hover {
+        transform: scale(1);
+        box-shadow: -4px 4px 8px rgba(0, 0, 0, 0.384);
+    }
+    .form {
+        margin-top: 15%;
+    }
+    #pageNav {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        position: absolute;
+        z-index: 1000;
+        width: 0vmin;
+        height: 0em;
+        opacity: 0;
+        border-radius: 20px;
+        margin-left: 2.5vmin;
+        text-align: center;
+        margin-top: 30vmin;
+        background-color: rgba(0, 0, 0, 0.486);
+        backdrop-filter: blur(15px);
+        transition: width 1s, height 1s, opacity 1s, display 1.5s; 
+    }
+    #pageNav button, a {
+        background-color: transparent;
+        text-decoration: none;
+        font-size: 1.4em;
+        width: 50%;
+        margin-left: 25%;
+        transition: display 1s;
+    }
+}

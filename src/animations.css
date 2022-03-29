@@ -1,0 +1,46 @@
+#purpTri {
+    animation-name: splashPurp;
+    animation-duration: 6s;
+    animation-fill-mode: both;
+    animation-direction: forwards;
+}
+@keyframes splashPurp {
+    0%{margin-left: -10%; display: none}
+    20%{margin-top: 30%; transform: rotateZ(360deg);}
+}
+#redTri {
+    animation-name: splashRed;
+    animation-duration: 8s;
+    animation-fill-mode: both;
+    animation-direction: forwards;
+}
+@keyframes splashRed {
+    0%{margin-left: 80%; opacity: 0;}
+    20%{margin-top: 20%; transform: rotateZ(-360deg);}
+}
+#orangeTri{
+    animation-name: splashOrange;
+    animation-duration: 15s;
+    animation-fill-mode: both;
+    animation-direction: forwards;
+}
+@keyframes splashOrange {
+    0%{margin-left: 80%; opacity: 0;}
+    20%{margin-top: -10%; transform: rotateZ(-300deg);}
+}
+.redCirc {
+    animation-name: redCirc;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-direction: forwards;
+}
+.greenCirc {
+    animation-name: redCirc;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-direction: forwards;
+}
+@keyframes redCirc {
+    0%{width: 1%; height: 1%;transform: scale(3)}
+    20%{}
+}
