@@ -1,66 +1,68 @@
 @media only screen and (max-width: 640px){
-    #page {
-        min-height: 100vmax;
-    }
-    nav .contacts, nav .pageNav {
-        display: none;
-    }
-    .landingPage nav h2{
-        font-size: 2.4em;
-    }
-    /** styuling landing page text*/
-    .landingTxt {
-        margin-top: 60%;
-        width: 95%;
-        margin-left: 2.5%;
-    }
-    .landingTxt h1 {
-        font-size: 4em;
-    }
-    .landingTxt h1 div {
-        height:inherit;
-    }
-    .landingTxt article {
-        width: 90%;
-        z-index: 100;
-    }
-    /** shapes and animation responsiveness */
-    #purpTri {
-        top: 12%;
-    }
-    #redTri {
-        top: 6%;
-    }
-    #orangeTri {
-        top: 0%;
-    }
+   #page {
+       height: max-content !important;
+       margin-bottom: 10%;
+   }
+   html, body {
+       background: url(./images/phoneBg.png);
+       background-size: cover;
+       background-repeat: no-repeat;
+       background-position: center;
+       background-attachment: fixed;
+       overflow: auto;
+   }
+   h1 {
+       font-size: 2em;
+   }
+   #navs{
+       display: none;
+   }
+   .landingPage {
+       height: fit-content !important;
+   }
+   .landingCont, #others {
+       grid-auto-flow: row;
+   }
+   .landingCont {
+       margin-top: 50%;
+       width: 90%;
+       margin-left: 5%;
+   }
+   .dp {
+       width: 12em;
+       height: 12em;
+       margin-left: auto;
+       margin-right: auto;
+   }
+   article {
+       text-align: center;
+       width: 100%;
+   }
+   .projectList {
+       flex-direction: column;
+   }
+   form {
+       width: 20em;
+   }
+   #others {
+       width: 20em;
+       height: max-content;
+       row-gap: 4%;
+   }
+   #others a {
+       margin-left: 5em;
+   }
+}
 
-    #drop {
-        display: block;
-        width: 10vmax;
-        background-color: transparent;
-        font-size: 1.2em;
+@media only screen and (max-width: 950px) {
+    html, body {
+        overflow: auto;
     }
-    #drop:hover{
-        background-color: transparent;
-        transform: scale(1);
+    .landingPage {
+        height: fit-content !important;
     }
-    /** styling portfolio responsiveness*/
-    .portfolio a {
-        margin: 0;
+    .dp {
+        width: 10em;
+        height: 10em;
     }
-    .list {
-        height: auto;
-        width: 95%;
-        margin-left: 2.5%;
-        margin-top: 5%;
-    }
-    .projectList {
-        height: auto;
-        width: 100%;
-        margin: 0;
-    }
-
-    /** styling hire me*/
-
 }

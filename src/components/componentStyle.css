@@ -1,170 +1,175 @@
 .project {
-    width: 60vh;
-    height: 10em;
+    width: 70vmin;
+    height: 40vmin;
     position: relative;
-    text-align: center;
-    margin: 2.5%;
-    transition: transform 1s;
-}
-.project p {
-    font-size: 1.2em;
+    display: block;
 }
 .projectImg {
     width: 100%;
-    height: 8em;
-    overflow: hidden;
-    display: flex;
-    justify-content: space-around;
     position: relative;
+    z-index: 0;
+    overflow: hidden;
 }
 .projectImg img {
-    width: 90%;
+    width: 100%;
 }
-.projectImg div {
-    position: absolute;
-    background-color: #FD4658;
-    width: 90%;
-    height: fit-content;
-    line-height: 5vh;
-    top: 0;
-    margin-top: 15%;
+.project .overview {
+    width: 0%;
     opacity: 0;
-    transition: opacity 0.5s, width 0.5s, background-image 5s;
+    height: 0;
+    background-color: rgba(0, 0, 0, 0.733);
+    z-index: 1000;
+    position: absolute;
+    top: 0;
+    text-align: center;
+    line-height: 10vmin;
+    transition: width 0.5s, opacity 0.5s, height 0.5s;
 }
-.project:hover{
-    transform: scale(1.2);
+.overview p {
+    color: white;
+}
+.overview a {
+    color: white;
+    width: 20vmax;
+    height: 5vmin;
+    border: 4px solid #B08BFF;
+}
+.project .overview h1 {
+    color: #FFA06B;
+    font-size: 1.5em;
+    font-family: bentoga;
 }
 
 .myService {
-    width: 40vh;
-    border-radius: 15px;
-    margin: 1%;
-    position: relative;
-    display: flex;
-    height: max-content;
-    background-color: #280034;
-    transition: transform 0.5s;
-}
-.myService:hover {
-    transform: scale(1.2);
-}
-.myService div {
-    width: 90%;
-    margin: 5%;
-    height: max-content;
-}
-.myService h4 {
-    color: #FD4658;
-}
-
-.form {
-    display: flexbox;
-    width: 100vmin;
+    width: 20vmax;
     height: fit-content;
     text-align: center;
-    margin-left: 50vmin;
-    margin-top: 5%;
-    background-color: #280034;
+    position: relative;
+    margin: 1%;
+    background-color: rgba(255, 255, 255, 0.24);
+    backdrop-filter: blur(7px);
 }
-.form input {
-    height: 3em;
-    width: 98vmin;
-    margin: 1vmin;
-    outline: none;
-    color: black;
-    text-align: center;
+.myService div {
+    width: 60%;
+    margin: 20%;
+}
+#dropBtn {
+    display: none;
+}   
+#dropBtn div {
+    transition: background-color 2s, position 1s;
+}
+#one {
+    width: 2em;
+    height: 0.5vh;
+    background-color: #CC835B;
+}
+#two {
+    width: 1.5em;
+    height: 0.5vh;
+    background-color: #8B5437;
+}
+#three {
+    width: 1.8em;
+    height: 0.5vh;
+    background-color: #42291b;
+}
+.dropMenu {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.89);
+    top: 0;
+    backdrop-filter: blur(7px);
+    z-index: 1000;
+    display: grid;
+    grid-auto-flow: grid;
+    transition: width 1s, height 1s, opacity 1s, display 1s;
+}
+.dropMenu img {
+    width: 50%;
+    margin-left: 25%;
+}
+.dropMenu a {
     color: white;
-    background-color: white;
-    font-size: 0.8em;
-}
-.form textarea {
-    width: 98vmin;
-    margin: 1vmin;
-    height: 9em;
-    font-size: 0.9em;
-    outline: none;
-    font-family: arial;
-    color: black;
-}
-.form button {
-    width: 40vmin;
-    height: 3em;
-    background-color: black;
-}
-.hirePlatforms {
-    width: 100vmin;
+    width: 10em;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 5%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-.hirePlatforms a {
+    text-align: center;
     text-decoration: none;
-    text-align: center;
-    height: 3em;
-    width: 40vmax;
-    line-height: 3em;
 }
-#fiverr {
-    background-color: #1DBF73;
-    color: white;
-    margin-bottom: 2%;
+
+.scroller {
+    position: fixed;
+    top: 25%;
+    left: 8%;
+    border-radius: 15px;
+    z-index: 1000;
+    width: 2vh;
+    height: 30vmax;
+    display: grid;
+    backdrop-filter:  blur(7px);
+    grid-auto-flow: row;
+    background-color: rgba(0, 0, 0, 0.315);
 }
-#upwork {
-    background-color: white;
-    color: #1DBF73;
+
+.scroller button {
+    width: 100%;
+    height: 7vmax;
+    border-radius: 15px;
+    background-color: #5c34ebad;
+    backdrop-filter: blur(15px)
+}
+.scroller button:hover {
+    background-color: rgb(199, 143, 255);
+}
+.contacts {
+    width: 5vh;
+    height: 30vmax;
+    position: fixed;
+    z-index: 1000;
+    left: 90%;
+    top: 26%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.contacts a img {
+    width: 100%;
 }
 
 @media screen and (max-width: 640px){
-    .form {
-        margin: 0;
+    .myService {
+        width: 30vmax;
+        margin: 1%;
     }
-    .form input {
-        height: 3em;
-        width: 98vmin;
-        margin: 1vmin;
-        outline: none;
-        color: black;
-        text-align: center;
-        line-height: 7em;
-        font-size: 0.8em;
+    .dropMenu {
+        display: grid;
     }
-    .hirePlatforms a {
-        margin: 0;
-    }
-    .project {
-        height: 10em;
-    }
-    .project:hover, .myService:hover {
-        transform: scale(1);
-        box-shadow: -4px 4px 8px rgba(0, 0, 0, 0.384);
-    }
-    .form {
-        margin-top: 15%;
-    }
-    #pageNav {
+    #dropBtn {
+        background-color: transparent;
+        width: 2em;
+        margin-top: 5%;
+        height: 2.5vh;
+        text-align: right;
         display: flex;
         flex-direction: column;
+        position: relative;
+        z-index: 2000;
         justify-content: space-around;
-        position: absolute;
-        z-index: 1000;
-        width: 0vmin;
-        height: 0em;
-        opacity: 0;
-        border-radius: 20px;
-        margin-left: 2.5vmin;
-        text-align: center;
-        margin-top: 30vmin;
-        background-color: rgba(0, 0, 0, 0.486);
-        backdrop-filter: blur(15px);
-        transition: width 1s, height 1s, opacity 1s, display 1.5s; 
     }
-    #pageNav button, a {
-        background-color: transparent;
-        text-decoration: none;
-        font-size: 1.4em;
-        width: 50%;
-        margin-left: 25%;
-        transition: display 1s;
+    .scroller, .contacts {
+        display: none;
+    }
+}
+@media screen and (max-width: 950px){
+    .scroller, .contacts{
+        display: none;
+    }
+    .myService {
+        margin: 1%;
     }
 }

@@ -1,206 +1,173 @@
 
 @font-face {
-  font-family: arual;
-  src: url(./fonts/arual.ttf);
+  font-family: bentoga;
+  src: url(./fonts/Bentoga-Thin.otf);
 }
 @font-face {
-  font-family: nano;
-  src: url(./fonts/nano.ttf);
-}
-@font-face {
-  font-family: existence;
-  src: url(./fonts/Existence-UnicaseLight.otf);
+  font-family: nelville;
+  src: url(./fonts/Nelville.ttf);
 }
 
 * {
   margin: 0;
   padding: 0;
   border: 0;
+  font-size: 1.03em;
   color: white;
-  user-select: none;
+  color: black;
+  font-family: bentoga;
   position: relative;
 }
+
 html, body {
-  font-family: existence;
-  font-size: 1.15em;
   background: url(./images/background.png);
-  background-size: 100% 100%;
-  background-position: center;
-  background-position: fill;
+  background-size: cover;
   background-repeat: no-repeat;
-  overflow-x: hidden;
+  background-attachment: fixed;
+  overflow-y: hidden;
 }
-/** style all pages with id=page*/
+h1 {
+  color: #A2432F;
+  font-family: nelville;
+  font-size: 3em;
+}
 #page {
-  min-height: 50vmax;
-  position: relative;
+  height: 100vh;
+  margin-bottom: 5%;
 }
-/** styling navigation bar*/
 nav {
-  width: 100%;
-  min-height: 10vmin;
-  height: fit-content;
-  line-height: 10vmin;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  height: 15vmin;
+  line-height: 15vmin;
 }
-nav h2 {
-  font-family: nano;
-  font-size: 2em;
-}
-nav .contacts {
-  width: 30vmax;
+nav div {
+  width: 20vmax;
+  margin-left: -10%;
   display: flex;
   justify-content: space-around;
 }
-nav .contacts img {
-  width: 1.5em;
-}
-nav .contacts a{
-  text-decoration: none;
-}
-nav .pageNav {
-  width: 20vmax;
-  display: block;
-  align-content: space-between;
-}
-nav .pageNav button {
-  width: 8vmax;
-  height: 5vmin;
-  font-size: 0.8em;
-  background-color: transparent;
-  margin: 5%;
-  transition: background-image 1s, transform 0.02s;
-}
-button:hover {
-  background-image: linear-gradient(45deg, #FFB546, #FF4658);
-  transform: scale(1.02);
-}
-#drop, #pageNav {
-  display: none;
-  margin-top: -4%;
-}
-
-/** styling landing page text*/
-.landingTxt {
-  width: 60%;
-  margin-left: 20%;
-  margin-top: 10%;
-}
-.landingTxt h1 {
-  font-family: arual;
-  font-size: 4.8em;
-  position: relative;
-  z-index: 100;
-  text-shadow: -8px 8px 8px black;
-}
-.landingTxt h1 div{
-  background-color: white;
-  width: 30%;
-  height: 0.9em;
-  position: absolute;
-  margin-top: 3%;
-  border-radius: 15px;
-  z-index: -1;
-  margin-left: 20%;
-}
-.landingTxt article {
-  width: 60%;
-}
-.landingTxt button {
-  background-color: rgb(45, 101, 255);
-  width: 40vmin;
-  height: 3em;
-  margin-top: 5%;
-  transition: transform 1s, background-image 1s;
-}
-
-/** shapes and their animations done here*/
-#purpTri {
-  width: 3em;
-  position: absolute;
-  margin-top: 20%;
-  margin-left: 5%;
-}
-#redTri {
-  width: 7em;
-  position: absolute;
-  margin-top: 14%;
-  margin-left: 3%;
-}
-#orangeTri {
-  width: 9em;
-  position: absolute;
-  margin-top: 7%;
-  margin-left: 1%;
-}
-.orangeCirc {
-  width: 2em;
-  height: 2em;
-  top: 60%;
-  margin-left: 70%;
-  position: absolute;
-  border-radius: 50%;
-  background-color: #FFB546;
-}
-.redCirc {
-  width: 2.5em;
-  height: 2.5em;
-  top: 20%;
-  margin-left: 80%;
-  position: absolute;
-  border-radius: 50%;
-  background-color: #FF4658;
-}
-.greenCirc {
-  width: 1.5em;
-  height: 1.5em;
-  top: 40%;
-  margin-left: 90%;
-  position: absolute;
-  border-radius: 50%;
-  background-color: #46DBC0;
-}
-
-/** styling portfolio page*/
-.portfolio a{
-  width: 10vmax;
-  height: 2em;
-  text-decoration: none;
-  border-radius: 15px;
+nav div a {
   text-align: center;
-  line-height: 2em;
-  background-color: #0D1117;
+  text-decoration: none;
 }
-.list {
-  width: 90%;
-  min-height: 45vmin;
-  height: 45vmin;
-  margin-left: 5%;
+.landingPage {
+  height: 100vh !important;
+}
+.landingCont {
+  display: grid;
+  grid-auto-flow: column;
+  column-gap: 10%;
+  width: 65%;
+  height: 30vmax;
+  margin-left: 17.4%;
+  margin-top: 5%;
+  transition: grid-auto-flow 1s;
+}
+.dp {
+  width: 15em;
+  height: 15em;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  background-color: #C66141;
+}
+
+
+.dp img {
+  width: 70%;
+  margin: 15%;
+  position: static;
+}
+article {
+  width: 100%;
+  margin-top: 10%;
+  text-align: left;
+}
+button {
+  width: 15vmax;
+  height: 2em;
+  color: white;
+  background-color: #000000;
 }
 .projectList {
-  width: 90%;
-  margin-left: 5%;
-  min-height: 13em;
-  height: 13em;
-  display: flex;
-  justify-content: space-around;
+  width: 70%;
+  margin-left: 15%;
+  height: fit-content;
+  display: inline-flex;
+  justify-content: center;
   flex-wrap: wrap;
-  background-color: #280034;
-}
-.list .nav {
-  width: 90%;
-  text-align: right;
-  font-size: 1.5em;
-  color: #FF4658;
+  justify-content: space-around;
 }
 
-.servicesList {
-  width: 90%;
-  height: max-content;
-  margin: 5%;
-  margin-top: 10%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+.hireMe {
+  text-align: center;
+}
+form {
+  width: 25em;
+  text-align: center;
+  display: flexbox;
+  margin-left: auto;
+  margin-right: auto;
+}
+form input, textarea {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 2%;
+  border-bottom: 2px solid black;
+  color: black;
+  outline: transparent;
+  background-color: transparent;
+}
+form input {
+  height: 2em;
+}
+form input:focus {
+  border-bottom: 2px rgb(49, 144, 252) solid;
+}
+textarea {
+  height: 5em;
+}
+#others {
+  width: 30em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  display: grid;
+  grid-auto-columns: max-content;
+  grid-auto-flow: column;
+  column-gap: 2%;
+  transition: grid-auto-flow 1s;
+}
+#others a {
+  text-align: center;
+  text-decoration: none;
+  height: 5vmax;
+  width: 10em;
+  line-height: 5vmax;
+  transition: background-color 0.5s, box-shadow 0.2s;
+}
+#fiverr {
+  background-color: #00c0439c;
+  color: white;
+}
+#fiverr:hover {
+  background-color: #00c043;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.548);
+}
+#upwork {
+  background-color: rgba(255, 255, 255, 0.76);
+  color: #00c043;
+}
+#upwork:hover {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.548);
+}
+#git {
+  background-color: #0b0316b9;
+  color: white;
+}
+#git:hover {
+  background-color: #0b0316;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.548);
 }
