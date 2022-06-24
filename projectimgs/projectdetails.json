@@ -1,0 +1,18 @@
+[
+    {
+        "projectName": "cake magic",
+        "projectDescription": "This is an e-commerce website for an imaginary confectionary business. It offers both the seller and buyer functionality with aesthetic.",
+        "projectStack": ["React Js + Node Js + MongoDb"],
+        "projectImage": "cakemagic.png",
+        "projectLink": "https://cakemagic.netlify.app",
+        "projectSource": ""
+    },
+    {
+        "projectName": "in-ticket",
+        "projectDescription": "This is an online ticket-vendering website. With a unique layout, the whole ticket buying process is mostly automated and seamless",
+        "projectStack": "React Js + Django + MongoDb",
+        "projectImage": "inticket.png",
+        "projectLink": "https://cakemagic.netlify.app",
+        "projectSource": ""
+    }
+]
