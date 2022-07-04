@@ -5,7 +5,7 @@
         "projectStack": ["React Js + Node Js + MongoDb"],
         "projectImage": "cakemagic.png",
         "projectLink": "https://cakemagic.netlify.app",
-        "projectSource": ""
+        "projectSource": "https://github.com/PessahDerek/cakemagic.io"
     },
     {
         "projectName": "in-ticket",
@@ -14,5 +14,13 @@
         "projectImage": "inticket.png",
         "projectLink": "https://cakemagic.netlify.app",
         "projectSource": ""
+    },
+    {
+        "projectName": "Shoppey",
+        "projectDescription": "This is a mobile suited web application to help manage shopping lists and do simple calculations during shopping. It is meant for mobile and experience on desktop devices is uncatered for.",
+        "projectStack": "React Js + Node Js + MongoDb",
+        "projectImage": "shoppey.png",
+        "projectLink": "https://shoppey.netlify.app",
+        "projectSource": "https://github.com/PessahDerek/shoppey"
     }
 ]
